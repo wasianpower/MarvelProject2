@@ -1,7 +1,7 @@
 // JavaScript for Name Data Lookup Demo
 // Jim Skon, Kenyon College, 2017
 var searchType;  // Save serach type here
-
+// git test comment
 $(document).ready(function () {
     searchType="Last";
     $("#search-btn").click(getMatches);
