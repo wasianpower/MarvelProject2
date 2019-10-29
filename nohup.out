@@ -1,0 +1,92 @@
+Building namemaps ...done!
+Wating for command
+Command Recieved:  
+Traceback (most recent call last):
+  File "marvelserver.py", line 139, in <module>
+    nameServer()
+  File "marvelserver.py", line 124, in nameServer
+    resultlist=sortRelevancy(searchFor(name,marvelindex,yearindex))
+  File "marvelserver.py", line 67, in searchFor
+    allterms=term.split()
+AttributeError: 'list' object has no attribute 'split'
+Building namemaps ...done!
+Wating for command
+Command Recieved:  iron man
+Sending:  "Iron Man (Anthony \""Tony\"" Stark)",https://marvel.fandom.com/wiki/Iron_Man_(Anthony_%22Tony%22_Stark), Mar 1963
+, 2961, Good , Living , Public , Male , Blue , Black , Iron Man (Sentient Armor) (Earth-616),https://marvel.fandom.com/wiki/Iron_Man_(Sentient_Armor)_(Earth-616), Mar 2000
+, 4, Neutral , Deceased , Public , Agender , White , No , White Dragon (Iron Man) (Earth-616),https://marvel.fandom.com/wiki/White_Dragon_(Iron_Man)_(Earth-616), Jul 1971
+, 2, Bad , Deceased , Secret , Male , , Black , Iron Man (Taskmaster Robot) (Earth-616),https://marvel.fandom.com/wiki/Iron_Man_(Taskmaster_Robot)_(Earth-616), Oct 1998
+, 1, Bad , Living , Secret , Agender , , , Zola Iron Man (Earth-616),https://marvel.fandom.com/wiki/Zola_Iron_Man_(Earth-616),  
+, 1, Bad , Living , Secret , Male , Black , No , Dragon Man (Earth-616),https://marvel.fandom.com/wiki/Dragon_Man_(Earth-616), Feb 1965
+, 139, Good , Living , No Dual , Male , Grey , No , Impossible Man (Earth-616),https://marvel.fandom.com/wiki/Impossible_Man_(Earth-616), Feb 1963
+, 60, Neutral , Living , No Dual , Male , Purple , No , Dynamic Man (Earth-616),https://marvel.fandom.com/wiki/Dynamic_Man_(Earth-616), Mar 1940
+, 18, Bad , Deceased , Secret , Male , Blue , Blond , Doomsday Man (Earth-616),https://marvel.fandom.com/wiki/Doomsday_Man_(Earth-616), Feb 1970
+, 14, Bad , Living , Secret , Male , Yellow , No , Straw Man (Earth-616),https://marvel.fandom.com/wiki/Straw_Man_(Earth-616), Aug 1975
+, 12, Good , Living , Secret , Male , Red , Yellow , 
+Wating for command
+Command Recieved:  spiderman
+Sending:  Spider-Man (Peter Parker),https://marvel.fandom.com/wiki/Spider-Man_(Peter_Parker), Aug 1962
+, 4043, Good , Living , Secret , Male , Hazel , Brown , Vern (Spider-Man) (Earth-616),https://marvel.fandom.com/wiki/Vern_(Spider-Man)_(Earth-616), Jun 2008
+, 2, , Living , , Male , , , Spiderman (1940s) (Earth-616),https://marvel.fandom.com/wiki/Spiderman_(1940s)_(Earth-616), Dec 1946
+, 1, Bad , Deceased , Secret , Male , , White , 
+Wating for command
+Command Recieved:  thor
+Sending:  Thor (Thor Odinson),https://marvel.fandom.com/wiki/Thor_(Thor_Odinson), Nov 1950
+, 2258, Good , Living , No Dual , Male , Blue , Blond , Thor Odinson (Ragnarok) (Earth-616),https://marvel.fandom.com/wiki/Thor_Odinson_(Ragnarok)_(Earth-616), Sep 2006
+, 42, Neutral , Living , Public , Male , Red , Bald, Thor Odinson (Heroes Reborn) (Earth-616),https://marvel.fandom.com/wiki/Thor_Odinson_(Heroes_Reborn)_(Earth-616), Nov 1996
+, 19, Good , Deceased , Public , Male , , , Thor Odinson (Skrull) (Earth-616),https://marvel.fandom.com/wiki/Thor_Odinson_(Skrull)_(Earth-616), Jun 2008
+, 6, Bad , Deceased , Secret , Male , Green , Blond , Thor Odinson (Onslaught Reborn) (Earth-616),https://marvel.fandom.com/wiki/Thor_Odinson_(Onslaught_Reborn)_(Earth-616), Feb 2007
+, 4, Good , Living , , Male , Blue , Blond , Thor Kid (Earth-616),https://marvel.fandom.com/wiki/Thor_Kid_(Earth-616), Aug 1992
+, 2, Bad , Deceased , , Male , , Blond , Thor Odinson (Demon Duplicate) (Earth-616),https://marvel.fandom.com/wiki/Thor_Odinson_(Demon_Duplicate)_(Earth-616), Aug 1963
+, 1, , Deceased , Public , Male , Blue , Blond , Thor (Taskmaster Robot) (Earth-616),https://marvel.fandom.com/wiki/Thor_(Taskmaster_Robot)_(Earth-616), Oct 1998
+, 1, Bad , Living , Secret , Male , , Blond , Zola Thor (Earth-616),https://marvel.fandom.com/wiki/Zola_Thor_(Earth-616),  
+, 1, Bad , Living , Secret , Male , Blue , Blond , Thor (Jovian) (Earth-616),https://marvel.fandom.com/wiki/Thor_(Jovian)_(Earth-616), Dec 1954
+, , Bad , Living , , Male , , , 
+Wating for command
+Command Recieved:  help
+Sending:  
+Wating for command
+Command Recieved:  marvel
+Sending:  Thelius (Blue Marvel) (Earth-616),https://marvel.fandom.com/wiki/Thelius_(Blue_Marvel)_(Earth-616), Nov 1975
+, 7, Bad , Living , Secret , Male , Blue , Blond , Stilt-Man (Marvel Team-Up) (Earth-616),https://marvel.fandom.com/wiki/Stilt-Man_(Marvel_Team-Up)_(Earth-616), Aug 2005
+, 5, Bad , Living , Secret , Male , , Blond , Marvel Girl (Lobe) (Earth-616),https://marvel.fandom.com/wiki/Marvel_Girl_(Lobe)_(Earth-616), Jan 2011
+, 5, Neutral , Living , Secret , Female , Blue , Red , Phaedra (Marvel UK) (Earth-616),https://marvel.fandom.com/wiki/Phaedra_(Marvel_UK)_(Earth-616), Mar 1992
+, 3, , Living , , Female , , , Minister Marvel (Earth-616),https://marvel.fandom.com/wiki/Minister_Marvel_(Earth-616), Jun 2012
+, 3, Neutral , Deceased , Public , Male , Green , No , Hercules (Empowered Marvel Boy) (Earth-616),https://marvel.fandom.com/wiki/Hercules_(Empowered_Marvel_Boy)_(Earth-616), Mar 1943
+, 1, Good , Living , Secret , Male , , , Mr. Marvel (Earth-616),https://marvel.fandom.com/wiki/Mr._Marvel_(Earth-616), Sep 1962
+, 1, Bad , Living , , Male , , , 
+Wating for command
+Command Recieved:  panther
+Sending:  Panther Lady (Earth-616),https://marvel.fandom.com/wiki/Panther_Lady_(Earth-616), Mar 1953
+, 3, Bad , Living , Secret , Female , , Black , American Panther (Earth-616),https://marvel.fandom.com/wiki/American_Panther_(Earth-616), Sep 2011
+, 3, Bad , Living , Secret , Male , , , Panther (Earth-616),https://marvel.fandom.com/wiki/Panther_(Earth-616), Aug 1989
+, 1, Good , Living , Secret , Male , , Black , 
+Wating for command
+Command Recieved:  iron man
+Sending:  "Iron Man (Anthony \""Tony\"" Stark)",https://marvel.fandom.com/wiki/Iron_Man_(Anthony_%22Tony%22_Stark), Mar 1963
+, 2961, Good , Living , Public , Male , Blue , Black , Iron Man (Sentient Armor) (Earth-616),https://marvel.fandom.com/wiki/Iron_Man_(Sentient_Armor)_(Earth-616), Mar 2000
+, 4, Neutral , Deceased , Public , Agender , White , No , White Dragon (Iron Man) (Earth-616),https://marvel.fandom.com/wiki/White_Dragon_(Iron_Man)_(Earth-616), Jul 1971
+, 2, Bad , Deceased , Secret , Male , , Black , Iron Man (Taskmaster Robot) (Earth-616),https://marvel.fandom.com/wiki/Iron_Man_(Taskmaster_Robot)_(Earth-616), Oct 1998
+, 1, Bad , Living , Secret , Agender , , , Zola Iron Man (Earth-616),https://marvel.fandom.com/wiki/Zola_Iron_Man_(Earth-616),  
+, 1, Bad , Living , Secret , Male , Black , No , Dragon Man (Earth-616),https://marvel.fandom.com/wiki/Dragon_Man_(Earth-616), Feb 1965
+, 139, Good , Living , No Dual , Male , Grey , No , Impossible Man (Earth-616),https://marvel.fandom.com/wiki/Impossible_Man_(Earth-616), Feb 1963
+, 60, Neutral , Living , No Dual , Male , Purple , No , Dynamic Man (Earth-616),https://marvel.fandom.com/wiki/Dynamic_Man_(Earth-616), Mar 1940
+, 18, Bad , Deceased , Secret , Male , Blue , Blond , Doomsday Man (Earth-616),https://marvel.fandom.com/wiki/Doomsday_Man_(Earth-616), Feb 1970
+, 14, Bad , Living , Secret , Male , Yellow , No , Straw Man (Earth-616),https://marvel.fandom.com/wiki/Straw_Man_(Earth-616), Aug 1975
+, 12, Good , Living , Secret , Male , Red , Yellow , 
+Wating for command
+Command Recieved:  Last,BRYAN
+Sending:  
+Wating for command
+Command Recieved:  peter
+Sending:  Spider-Man (Peter Parker),https://marvel.fandom.com/wiki/Spider-Man_(Peter_Parker), Aug 1962
+, 4043, Good , Living , Secret , Male , Hazel , Brown , Peter Parker (Ben Reilly) (Earth-616),https://marvel.fandom.com/wiki/Peter_Parker_(Ben_Reilly)_(Earth-616), Oct 1975
+, 263, Good , Deceased , Secret , Male , Hazel , Blond , Peter Petruski (Earth-616),https://marvel.fandom.com/wiki/Peter_Petruski_(Earth-616), Jan 1963
+, 150, Bad , Living , Secret , Male , Brown , Bald, Peter Wisdom (Earth-616),https://marvel.fandom.com/wiki/Peter_Wisdom_(Earth-616), Feb 1995
+, 140, Good , Living , No Dual , Male , Blue , Black , Peter Parker (Kaine) (Earth-616),https://marvel.fandom.com/wiki/Peter_Parker_(Kaine)_(Earth-616), Dec 1994
+, 137, Good , Living , Secret , Male , Hazel , Brown , Peter Quill (Earth-616),https://marvel.fandom.com/wiki/Peter_Quill_(Earth-616), Jan 1976
+, 119, Good , Living , Secret , Male , Blue , Blond , Peter Hunter (Earth-616),https://marvel.fandom.com/wiki/Peter_Hunter_(Earth-616), Feb 1991
+, 42, Good , Living , Secret , Male , Blue , Grey , Peter Corbeau (Earth-616),https://marvel.fandom.com/wiki/Peter_Corbeau_(Earth-616), Feb 1972
+, 36, Good , Living , Public , Male , , Brown , Peter Parker (Doppelganger) (Earth-616),https://marvel.fandom.com/wiki/Peter_Parker_(Doppelganger)_(Earth-616), Jun 1992
+, 35, Bad , Living , Secret , Male , White , No , Peter Parker (Spidercide) (Earth-616),https://marvel.fandom.com/wiki/Peter_Parker_(Spidercide)_(Earth-616), Mar 1995
+, 35, Bad , Deceased , Secret , Male , Hazel , Brown , 
