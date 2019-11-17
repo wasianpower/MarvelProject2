@@ -34,20 +34,27 @@ class phoneBook:
 
   def findByLast(self,last):
     mycursor = self.mydb.cursor()
-    mycursor.execute("SELECT * FROM Phonebook WHERE ARTIST like '%"+last+"%'");
+    mycursor.execute("SELECT * FROM ART1 WHERE ARTIST like '%"+last+"%'");
     myresult = mycursor.fetchall()
+    print(type(myresult))
     return(myresult)
            
   def findByFirst(self,first):
     mycursor = self.mydb.cursor()
-    mycursor.execute("SELECT * FROM Phonebook WHERE DATE like '%"+first+"%'");
+    mycursor.execute("SELECT * FROM ART1 WHERE DATE like '%"+first+"%'");
+    myresult = mycursor.fetchall()
+    return(myresult)
+    
+  def findByType(self,first):
+    mycursor = self.mydb.cursor()
+    mycursor.execute("SELECT * FROM ART1 WHERE OTHERS like '%"+first+"%'");
     myresult = mycursor.fetchall()
     return(myresult)
            
   def delete(self,idnum):
     mycursor = self.mydb.cursor()
     try:
-      mycursor.execute("DELETE FROM Phonebook WHERE ID='"+idnum+"'")
+      mycursor.execute("DELETE FROM ART1 WHERE ID='"+idnum+"'")
       self.mydb.commit()
     except Exception as e:
       return "Error,"+ str(e)
@@ -58,7 +65,7 @@ class phoneBook:
   def addEntry(self,first,last,phone):
     mycursor = self.mydb.cursor()
     try:
-      mycursor.execute("INSERT INTO Phonebook(First,Last,Phone,Type) VALUES ('"+first+"','"+last+"','"+phone+"')")
+      mycursor.execute("INSERT INTO ART1(ARTIST,DATE,OTHERS) VALUES ('"+first+"','"+last+"','"+phone+"')")
       self.mydb.commit()
     except Exception as e:
       return "Error,"+ str(e)
@@ -69,7 +76,7 @@ class phoneBook:
   def editEntry(self,idnum,first,last,phone):
     mycursor = self.mydb.cursor()
     try:
-      mycursor.execute("UPDATE Phonebook SET ARTIST = '"+first+"', DATE ='"+last+"', OTHERS ='"+phone+"' WHERE ID='"+idnum+"'")
+      mycursor.execute("UPDATE ART1 SET ARTIST = '"+first+"', DATE ='"+last+"', OTHERS ='"+phone+"' WHERE ID='"+idnum+"'")
       self.mydb.commit()
     except Exception as e:
       return "Error,"+ str(e)
@@ -106,6 +113,8 @@ def main():
   #l.write("Test Message:")
   pb=phoneBook()
   form = cgi.FieldStorage()
+  print(form.getvalue("operation"))
+  print(form.getvalue("find"))
   if (form.getvalue("operation")):
     operation=form.getvalue("operation")
     #l.write("op:"+operation)
@@ -114,7 +123,7 @@ def main():
     search=fixAttr(search)
     if search==None:
       search=""
-    if "ARTIST"" in operation:
+    if "ARTIST" in operation:
       pbResults=pb.findByLast(search)
       printResults(pbResults)
     elif "DATE" in operation:
