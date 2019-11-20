@@ -33,10 +33,10 @@ class phoneBook:
     return
 
   def findByLast(self,last):
+
     mycursor = self.mydb.cursor()
     mycursor.execute("SELECT * FROM ART1 WHERE ARTIST like '%"+last+"%'");
     myresult = mycursor.fetchall()
-    print(type(myresult))
     return(myresult)
            
   def findByFirst(self,first):
@@ -85,16 +85,11 @@ class phoneBook:
     return ("success")
            
 def printResults(results):
-  print("Success,",end="")
-  first=True
+  finalresults=" "
   for row in results:
     for field in row:
-      if first:
-        first = False
-      else:
-        print(",",end="",sep="")
-      print(field,end="",sep="")
-  print()
+      finalresults+=str(field)+", "
+  print(finalresults)
   return
 
 def fixAttr(s):
@@ -113,8 +108,6 @@ def main():
   #l.write("Test Message:")
   pb=phoneBook()
   form = cgi.FieldStorage()
-  print(form.getvalue("operation"))
-  print(form.getvalue("find"))
   if (form.getvalue("operation")):
     operation=form.getvalue("operation")
     #l.write("op:"+operation)

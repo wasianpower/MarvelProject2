@@ -26,14 +26,15 @@ function showInfo(divisionIdentity) {
 
 // Build output table from comma delimited list
 function artTable(list) {
-    var result = '<table class="w3-table-all w3-hoverable" border="2"><tr><th>Art</th><tr>';
+    var result = '<table class="w3-table-all w3-hoverable" border="2"><tr><th><h2>Results:</h2></th><tr>';
     var a = list.split(",");
     var aLen = a.length;
     for (var i = 0; i < aLen; i+=1) {
-	result += "<tr><td>"+a[i]+"</td><td>"
+	result += "<tr><td><h3>"+a[i]+"</h3></td><td>"
+	}
     result += "</table>";
     return result;
-	}
+
 }
 
 
